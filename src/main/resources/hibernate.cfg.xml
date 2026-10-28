@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+     <session-factory>
+          <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+          <property name="connection.url">
+               jdbc:mysql://localhost:3306/online_banking_db?createDatabaseIfNotExist=true</property>
+          <property name="connection.username">root</property>
+          <property name="connection.password">your_local_password</property>
+
+          <property name="connection.pool_size">10</property>
+
+  
+          <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+          <property name="show_sql">true</property>
+          <property name="format_sql">true</property>
+
+          <property name="hbm2ddl.auto">update</property>
+
+
+          <mapping class="com.bank.entity.User" />
+          <mapping class="com.bank.entity.Account" />
+          <mapping class="com.bank.entity.Transaction" />
+          <mapping class="com.bank.entity.Loan" />
+          <mapping class="com.bank.entity.KycDocument" />
+          <mapping class="com.bank.entity.Beneficiary" />
+          <mapping class="com.bank.entity.EmiSchedule" />
+          <mapping class="com.bank.entity.FixedDeposit" />
+          <mapping class="com.bank.entity.DebitCard" />
+          <mapping class="com.bank.entity.AuditLog" />
+     </session-factory>
+</hibernate-configuration>
