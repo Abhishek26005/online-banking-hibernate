@@ -1,10 +1,3 @@
-You can generate the complete `README.md` file directly inside your project folder in one click, or copy the raw file content below.
-
-### Option 1: Auto-Create `README.md` via PowerShell (Fastest)
-
-Copy and paste this entire block into your VS Code PowerShell terminal (`E:\My MCA Training\online-banking-hibernate>`). It will automatically create and save the complete `README.md` file in your project root:
-
-```powershell
 @'
 # 🏦 Enterprise Online Banking System (Hibernate ORM)
 
@@ -152,4 +145,3 @@ erDiagram
         LocalDateTime timestamp
         Long user_id FK
     }
-
