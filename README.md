@@ -153,5 +153,3 @@ erDiagram
         Long user_id FK
     }
 
-```
-
